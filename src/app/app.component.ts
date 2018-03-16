@@ -13,7 +13,7 @@ ngOnInit() {
   }
   public play() {
     const audio = new Audio('../assets/ghostadventures.mp3');
-    audio.play();
+    // audio.play();
     this.played = true;
   }
 }
