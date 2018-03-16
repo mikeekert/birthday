@@ -25,6 +25,9 @@
     }
 }
 
+.everything {
+    overflow: hidden;
+}
 
 .footer {
     transition: all;
@@ -36,6 +39,7 @@
     @keyframes fadeLeft {
         0% {}
         100% {
+            display: block;
             transform: translateX(0)
         }
     }
