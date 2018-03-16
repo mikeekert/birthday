@@ -1,3 +1,25 @@
-<div class="main-content">
-  HAPPY BIRTHDAY
-</div>
+<section class="top" *ngIf="!chills">
+  <div class="main-content container-fluid example-one" data-text="UNDERSTAND">
+    UNDERSTAND</div>
+  <div class="image-zak">
+    <img src="../assets/zak.gif" alt="" class="mx-auto d-block">
+  </div>
+</section>
+<section class="reveal" *ngIf="chills">
+ <h2>HAPPY BIRTHDAY!!</h2> 
+ <div class="photo">
+   <img src="../assets/ghostadventures1.jpg" alt="">
+ </div>
+ <div class="message">
+   <h1>From the ghost adventures crew, and myself.</h1>
+   <p>Hopefully your birthday is a great one!</p>
+   <p class="signature">-Mike!</p>
+ </div>
+</section>
+<section class="footer" *ngIf="!chills">
+  <a (click)="chills = true">
+      <h3>Do you feel chills?<i class="fas fa-arrow-right"></i></h3>
+  </a>
+
+ 
+</section>
